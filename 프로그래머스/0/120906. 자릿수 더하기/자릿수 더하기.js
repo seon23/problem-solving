@@ -1,4 +1,4 @@
-const solution = (n) => {
-    const digitStrings = n.toString().split('');
-    return digitStrings.reduce((sum, digitStr) => sum + Number(digitStr), 0);
-}
+const solution = (n) => 
+    n.toString()
+        .split('')
+        .reduce((acc, curr) => acc + Number(curr), 0);
