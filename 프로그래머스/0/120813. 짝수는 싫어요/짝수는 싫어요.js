@@ -1,0 +1,1 @@
+const solution = n => Array(Math.round(n/2)).fill().map((_, i) => 1 + 2 * i);
