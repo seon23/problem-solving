@@ -1,0 +1,1 @@
+const solution = n => (n % (n ** 0.5) === 0) ? 1 : 2; 
