@@ -1,9 +1,11 @@
-
 const solution = (n) => {
-    let ret = 0; 
-    for (let i = 1; i < Math.sqrt(n); i += 1) {
-        if (n % i === 0) ret += 2;
-    }
+  const pairs = { 1: n };
     
-    return Math.sqrt(n) % 1 === 0 ? ret += 1: ret;
+  for (let divisor = 2; divisor <= Math.sqrt(n); divisor += 1) {
+    if (n % divisor === 0) pairs[n / divisor] = divisor;
+  }
+
+  return Math.sqrt(n) % 1 === 0
+    ? Object.keys(pairs).length * 2 - 1
+    : Object.keys(pairs).length * 2;
 };
