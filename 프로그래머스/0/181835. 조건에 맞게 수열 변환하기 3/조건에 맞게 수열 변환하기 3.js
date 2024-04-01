@@ -1,3 +1,3 @@
 const solution = (arr, k) => {
-    return arr.map(a => k % 2 ? a * k : a + k);
-};
+    return k % 2 ? arr.map(a => a * k) : arr.map(a => a + k);
+}
