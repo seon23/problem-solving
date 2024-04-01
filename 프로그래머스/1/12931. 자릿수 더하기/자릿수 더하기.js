@@ -1,0 +1,1 @@
+const solution = N => [...`${N}`].reduce((acc, curr) => acc + Number(curr), 0);
