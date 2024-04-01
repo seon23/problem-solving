@@ -1,0 +1,1 @@
+const solution = (num_list) => num_list.reduce((acc, curr) => acc * curr) < num_list.reduce((acc, curr) => acc + curr) ** 2 ? 1 : 0;
