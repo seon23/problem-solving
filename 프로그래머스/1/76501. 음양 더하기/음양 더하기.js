@@ -1,3 +1,3 @@
 const solution = (absolutes, signs) => {
-    return absolutes.reduce((acc, abs, idx) => acc + abs * Math.pow(-1, signs[idx] + 1), 0);
+    return absolutes.reduce((acc, abs, idx) => acc + abs * (signs[idx] ? 1 : -1), 0);
 }
