@@ -1,7 +1,3 @@
 const solution = (a, b) => {
-    let sum = 0;
-    for (let i = 0; i < a.length; i += 1) {
-        sum += a[i] * b[i];
-    }
-    return sum;
+    return Array(a.length).fill().reduce((acc, _, idx) => acc + a[idx] * b[idx], 0);
 }
