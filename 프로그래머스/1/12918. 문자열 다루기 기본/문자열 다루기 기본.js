@@ -1,1 +1,1 @@
-const solution = s => (s.length === 4 || s.length === 6) && !(/\D/.test(s));
+const solution = s => /^(\d{4}|\d{6})$/.test(s);
