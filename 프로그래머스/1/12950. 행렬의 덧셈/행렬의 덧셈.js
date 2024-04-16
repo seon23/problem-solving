@@ -1,1 +1,1 @@
-const solution = (arr1, arr2) => arr1.reduce((matrix, row, i) => [...matrix, row.map((v, j) => v + arr2[i][j])], []);
+const solution = (arr1, arr2) => arr1.map((row, i) => row.map((v, j) => v + arr2[i][j]));
